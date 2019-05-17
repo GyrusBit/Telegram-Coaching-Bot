@@ -24,6 +24,8 @@ bot.get_updates(fail_silently: true) do |message|
       reply.text = "NO GOD NO, PLEASE NO !!!"
     when /night/
       reply.text = "Bonne nuit belles et beaux coachs de l'amour <3"
+    when /dab/
+      reply.text  = "#{message.from.first_name} effectue le dab!"
     else
       reply.text = "I have no idea what #{command.inspect} means (yet :p)."
     end
